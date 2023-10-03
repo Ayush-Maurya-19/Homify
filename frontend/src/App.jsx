@@ -6,8 +6,8 @@ import Signup from "./components/Signup";
 import AddRentSpace from "./components/AddRentSpace";
 import ManageRentSpaces from "./components/ManageRentSpaces";
 import SpaceDetails from "./components/SpaceDetails";
-import BrowserRentSpace from "./components/BrowserRentSpace";
 import Navbar from "./components/Navbar";
+import Browse from "./components/Browser";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
           <Route element={<Login />} path="/login" />
           <Route element={<Signup />} path="/signup" />
           <Route element={<AddRentSpace />} path="/addrentspace" />
-          <Route element={<BrowserRentSpace />} path="/browserrentspace" />
+          <Route element={<Browse />} path="/browser" />
           <Route element={<ManageRentSpaces />} path="/managerentspaces" />
           <Route element={<SpaceDetails />} path="/spacedetails" />
         </Routes>

@@ -1,15 +1,16 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import '../App.css';
 
 const Navbar = () => {
   return (
-    <nav className='navbar navbar-expand-lg bg-body-tertiary'>
+    <nav className='navbar navbar-expand-lg bg-body-tertiary nav-height'>
         <div className="container-fluid">
 {/* if i enter # it showing warning and nothing is shown in homepage*/}
             <a className='navbar-brand' href=" ">
-                Navbar
+            <h3 className='text-danger'>Homify</h3>
             </a>
-            {/* <button 
+            <button 
                className='navbar-toggler'
                type='button'
                data-bs-toggle='collapse'
@@ -18,7 +19,7 @@ const Navbar = () => {
                aria-label='Toggle navigation'
             > 
             <span className='navbar-toggler-icon' />
-            </button> */}
+            </button>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                     <li className='nav-item'>
@@ -47,8 +48,8 @@ const Navbar = () => {
                         </NavLink>
                     </li>
                     <li className='nav-item'>
-                        <NavLink className="nav-link" to="browserrentspace">
-                            BrowserRentSpace
+                        <NavLink className="nav-link" to="browser">
+                            Browser
                         </NavLink>
                     </li>
                     <li className='nav-item'>
@@ -57,6 +58,7 @@ const Navbar = () => {
                         </NavLink>
                     </li>
                 </ul>
+
             </div>
         </div>
     </nav>
