@@ -1,8 +1,22 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import '../App.css';
+import UseAppContext from '../AppContext';
 
 const Navbar = () => {
+
+    const { loggedin, logout } = UseAppContext();
+
+    const displayUserOption = () => {
+      if (loggedin) {
+        return (
+          <li className="nav-item">
+            <button className="btn btn-danger" onClick={logout}>Logout</button>
+          </li>
+        );
+      }
+    };
+
   return (
     <nav className='navbar navbar-expand-lg bg-body-tertiary nav-height'>
         <div className="container-fluid">
@@ -27,14 +41,10 @@ const Navbar = () => {
                             Home
                         </NavLink>
                     </li>
+                  
                     <li className='nav-item'>
                         <NavLink className="nav-link" to="signup">
                             Signup
-                        </NavLink>
-                    </li>
-                    <li className='nav-item'>
-                        <NavLink className="nav-link" to="login">
-                            Login
                         </NavLink>
                     </li>
                     <li className='nav-item'>
@@ -58,7 +68,14 @@ const Navbar = () => {
                         </NavLink>
                     </li>
                 </ul>
-
+                
+                <ul className="navbar-nav">
+                <li className='nav-item'>
+                        <NavLink className="nav-link" to="login">
+                            <button className='btn btn-light'> Login</button>
+                        </NavLink>
+                    </li>
+          </ul>
             </div>
         </div>
     </nav>

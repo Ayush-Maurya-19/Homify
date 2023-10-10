@@ -24,7 +24,87 @@
  text-shadow: 2px 2px 5px black; 
 }
 
-.card{
-  min-height: 20vh;
-  
+.footer{
+  text-decoration: none;
+  color: white;
 }
+
+.btn{
+  margin-left: 88px;
+}
+
+.dot {
+  height: 230px;
+  width: 1300px;
+  border-radius: 0%;
+  display: inline-block;
+  color: white;
+  font-size: 20px;
+}
+
+/*---------------------------- Homepage Newsletter ---------------------*/
+.newsletter{
+  width: 83%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 0px 140px;
+  margin-bottom: 120px;
+  gap: 10px;
+  background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+  border-radius: 5px;
+}
+
+.newsletter h1{
+  color: #454545;
+  margin-top: 60px;
+  font-size: 44px;
+  font-weight: 500;
+}
+
+.newsletter p{
+  color: #454545;
+  font-size: 20px;
+}
+
+.newsletter div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  width: 630px;
+  height: 50px;
+  border-radius: 80px;
+  border: 1px solid #e3e3e3;
+}
+
+.newsletter input{
+  width: 500px;
+  margin-left: 30px;
+  border: none;
+  outline: none;
+  color: #616161;
+  font-size: 16px;
+}
+
+.newsletter div button{
+  width: 150px;
+  height: 50px;
+  border-radius: 80px;
+  background: black;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+/*--------------- Login -----------------------*/
+
+

@@ -8,11 +8,18 @@ import ManageRentSpaces from "./components/ManageRentSpaces";
 import SpaceDetails from "./components/SpaceDetails";
 import Navbar from "./components/Navbar";
 import Browse from "./components/Browser";
+import { AnimatePresence } from "framer-motion";
+import { Toaster } from "react-hot-toast";
+import { AppProvider } from "./AppContext";
+
 
 function App() {
   return (
     <div>
+    <Toaster position="top right" />
+    <AnimatePresence mode="popLayout">
       <BrowserRouter>
+      <AppProvider >
         <Navbar />
         <Routes>
           <Route element={<Home />} path="/" />
@@ -23,7 +30,9 @@ function App() {
           <Route element={<ManageRentSpaces />} path="/managerentspaces" />
           <Route element={<SpaceDetails />} path="/spacedetails" />
         </Routes>
+        </AppProvider>
       </BrowserRouter>
+      </AnimatePresence>
     </div>
   );
 }

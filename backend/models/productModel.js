@@ -1,10 +1,11 @@
 const { model, Schema } = require('../connection');
 
 const mySchema = new Schema({
-    title : String,
-    category : String,
+    name : String,
+    location : String,
+    address : String,
+    type : String,
     price : Number,
-    rating : Number
 });
 
 module.exports = model( 'products', mySchema );
