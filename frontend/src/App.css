@@ -1,35 +1,35 @@
-.nav-height{
+.nav-height {
   height: 6vh;
 }
 
-.head{
+.head {
   height: 94vh;
 }
 
-.background{
+.background {
   background-image: url(../public/Assets/Bg.jpg);
   height: 30vh;
   background-size: cover;
   background-position: center;
 }
 
-.opacity{
+.opacity {
   /* background-color: hsla(0, 0%, 100%, 0.466) ; */
   height: 30vh;
-  background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0.5) 100%);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
 }
 
-.heading{
- text-shadow: 2px 2px 5px black; 
+.heading {
+  text-shadow: 2px 2px 5px black;
 }
 
-.footer{
+.footer {
   text-decoration: none;
   color: white;
 }
 
-.btn{
+.btn {
   margin-left: 88px;
 }
 
@@ -43,7 +43,7 @@
 }
 
 /*---------------------------- Homepage Newsletter ---------------------*/
-.newsletter{
+.newsletter {
   width: 83%;
   height: 30vh;
   display: flex;
@@ -58,19 +58,19 @@
   border-radius: 5px;
 }
 
-.newsletter h1{
+.newsletter h1 {
   color: #454545;
   margin-top: 60px;
   font-size: 44px;
   font-weight: 500;
 }
 
-.newsletter p{
+.newsletter p {
   color: #454545;
   font-size: 20px;
 }
 
-.newsletter div{
+.newsletter div {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -81,7 +81,7 @@
   border: 1px solid #e3e3e3;
 }
 
-.newsletter input{
+.newsletter input {
   width: 500px;
   margin-left: 30px;
   border: none;
@@ -90,7 +90,7 @@
   font-size: 16px;
 }
 
-.newsletter div button{
+.newsletter div button {
   width: 150px;
   height: 50px;
   border-radius: 80px;
@@ -106,5 +106,3 @@
 
 
 /*--------------- Login -----------------------*/
-
-

@@ -101,4 +101,18 @@ const Browse = () => {
 
 
 
+      <div className="py-5 my-3 container-fluid">
+            className="py-5 my-3 container-fluid"
+
+
+
+
 export default Browse;
+
+
+///////////////
+profile 
+product
+footer
+add product -> addrent space
+///////////////

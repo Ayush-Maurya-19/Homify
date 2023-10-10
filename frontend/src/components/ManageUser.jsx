@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import toast from "react-hot-toast";
+import { Link } from "react-router-dom";
 
 const ManageUser = () => {
   const [userData, setUserData] = useState([]);
@@ -53,7 +54,7 @@ const ManageUser = () => {
               <th>Name</th>
               <th>Email</th>
               <th>Password</th>
-              <th>Action</th>
+              <th colSpan={2}>Action</th>
             </tr>
           </thead>
           <tbody>
@@ -73,6 +74,11 @@ const ManageUser = () => {
                     >
                       Delete
                     </button>
+                  </td>
+                  <td>
+                    <Link to={'/updateuser/' + user._id} className="btn btn-primary">
+                      View User
+                    </Link>
                   </td>
                 </tr>
               );

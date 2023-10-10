@@ -59,11 +59,11 @@ const Login = () => {
 
   return (
     <motion.div
-        initial={{x: '100%'}}
-        animate={{x: 0}}
-        exit={{x: '-100%'}}
-        transition={{duration: 0.3}}
-      
+      initial={{ x: '100%' }}
+      animate={{ x: 0 }}
+      exit={{ x: '-100%' }}
+      transition={{ duration: 0.3 }}
+
       className="py-5 my-3 container-fluid"
     >
       <div className="col-md-3 mx-auto">

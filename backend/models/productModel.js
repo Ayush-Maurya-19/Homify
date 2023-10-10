@@ -4,8 +4,11 @@ const mySchema = new Schema({
     name : String,
     location : String,
     address : String,
-    type : String,
+    category : String,
+    image : String,
     price : Number,
+    rating : Number,
+    reviews: Number
 });
 
 module.exports = model( 'products', mySchema );

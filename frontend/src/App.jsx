@@ -3,35 +3,44 @@ import './App.css';
 import Home from "./components/Home";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
+import Navbar from "./components/Navbar";
+import NotFound from "./components/NotFound";
+import Browse from "./components/Browser";
+import ManageUser from "./components/ManageUser";
 import AddRentSpace from "./components/AddRentSpace";
 import ManageRentSpaces from "./components/ManageRentSpaces";
 import SpaceDetails from "./components/SpaceDetails";
-import Navbar from "./components/Navbar";
-import Browse from "./components/Browser";
 import { AnimatePresence } from "framer-motion";
 import { Toaster } from "react-hot-toast";
 import { AppProvider } from "./AppContext";
+import UserAuth from "./UserAuth";
+import UpdateUser from "./components/UpdateUser";
 
 
 function App() {
   return (
     <div>
-    <Toaster position="top right" />
-    <AnimatePresence mode="popLayout">
-      <BrowserRouter>
-      <AppProvider >
-        <Navbar />
-        <Routes>
-          <Route element={<Home />} path="/" />
-          <Route element={<Login />} path="/login" />
-          <Route element={<Signup />} path="/signup" />
-          <Route element={<AddRentSpace />} path="/addrentspace" />
-          <Route element={<Browse />} path="/browser" />
-          <Route element={<ManageRentSpaces />} path="/managerentspaces" />
-          <Route element={<SpaceDetails />} path="/spacedetails" />
-        </Routes>
-        </AppProvider>
-      </BrowserRouter>
+      <Toaster position="top right" />
+      <AnimatePresence mode="popLayout">
+        <BrowserRouter>
+          <AppProvider >
+            <Navbar />
+            <Routes>
+              <Route element={<Home />} path="/" />
+              <Route element={<Login />} path="/login" />
+              <Route element={<Signup />} path="/signup" />
+              <Route element={<AddRentSpace />} path="/addrentspace" />
+              <Route element={<Browse />} path="/browser" />
+              <Route element={<ManageRentSpaces />} path="/managerentspaces" />
+              <Route element={<SpaceDetails />} path="/spacedetails" />
+              <Route element={<UserAuth> <ManageUser /> </UserAuth>} path="/manageuser" />
+              <Route element={<UpdateUser />} path="/updateuser/:id" />
+              <Route element={<NotFound />} path="*" />
+
+
+            </Routes>
+          </AppProvider>
+        </BrowserRouter>
       </AnimatePresence>
     </div>
   );
