@@ -28,6 +28,18 @@ router.get("/getall", (req, res) => {
     });
 });
 
+//: denotes URL paremeter
+router.get('/getbyemail/:email', (req, res) => {
+  console.log(req.params.email);
+  Model.findOne({email : req.params.email})
+  .then((result) => {
+      res.json(result);
+  })
+  .catch((err) => {
+      console.log(err);
+      res.status(500).json(err);
+  });
+});
 
 router.get("/getbyid/:id", (req, res) => {
   Model.findById(req.params.id)

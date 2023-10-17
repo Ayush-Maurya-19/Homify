@@ -25,7 +25,7 @@ const Navbar = () => {
                             width={35}
                             height={35}
                             className="rounded-circle"
-                            src={`http://localhost:5000/${currentUser.avatar}`}
+                            src={`http://localhost:5000/`}
                             alt="avatar"
                             onError={(e) => {
                                 e.target.src = './Assets/admin.png'; // To Handle image load errors
@@ -81,30 +81,30 @@ const Navbar = () => {
                             </NavLink>
                         </li>
                         <li className='nav-item'>
-                            <NavLink className="nav-link" to="spacedetails">
-                                SpaceDetails
-                            </NavLink>
-                        </li>
-                        <li className='nav-item'>
-                            <NavLink className="nav-link" to="addrentspace">
-                                AddRentSpace
-                            </NavLink>
-                        </li>
-                        <li className='nav-item'>
                             <NavLink className="nav-link" to="browser">
                                 Browser
                             </NavLink>
                         </li>
-                        <li className='nav-item'>
-                            <NavLink className="nav-link" to="managerentspaces">
-                                ManageRentSpaces
-                            </NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink className="nav-link" to="/manageuser">
-                                Manage User
-                            </NavLink>
-                        </li>
+                        {loggedin ? (
+                            <>
+
+                                <li className='nav-item'>
+                                    <NavLink className="nav-link" to="addrentspace">
+                                        AddRentSpace
+                                    </NavLink>
+                                </li>
+                                <li className='nav-item'>
+                                    <NavLink className="nav-link" to="managerentspaces">
+                                        ManageRentSpaces
+                                    </NavLink>
+                                </li>
+                                <li className="nav-item">
+                                    <NavLink className="nav-link" to="/manageuser">
+                                        Manage User
+                                    </NavLink>
+                                </li>
+                            </>
+                        ) : null}
                     </ul>
 
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">

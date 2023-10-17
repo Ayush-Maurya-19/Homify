@@ -15,6 +15,8 @@ import { Toaster } from "react-hot-toast";
 import { AppProvider } from "./AppContext";
 import UserAuth from "./UserAuth";
 import UpdateUser from "./components/UpdateUser";
+import AllProducts from "./components/AllProducts";
+import EditAllProducts from "./components/EditAllProducts";
 
 
 function App() {
@@ -32,10 +34,15 @@ function App() {
               <Route element={<AddRentSpace />} path="/addrentspace" />
               <Route element={<Browse />} path="/browser" />
               <Route element={<ManageRentSpaces />} path="/managerentspaces" />
-              <Route element={<SpaceDetails />} path="/spacedetails" />
+              <Route element={<SpaceDetails />} path="/spacedetails/ :id" />
               <Route element={<UserAuth> <ManageUser /> </UserAuth>} path="/manageuser" />
               <Route element={<UpdateUser />} path="/updateuser/:id" />
               <Route element={<NotFound />} path="*" />
+              <Route element={<AllProducts />} path="/allproducts" />
+              <Route element={<EditAllProducts />} path="/editallproducts/:id" />
+
+
+
 
 
             </Routes>

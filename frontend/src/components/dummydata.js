@@ -1,16 +1,16 @@
 const laptopList = [
     {
         id: 3654,
-        name: 'Hotel Pinaka',
+        name: 'BE ANIMAL',
         location: 'Lucknow',
         address: 'Gomti Nagar',
         type: 'Apartments',
         price: 1200,
-        image: './Assets/Apartments1.webp',
+        image: './Assets/pg2.webp',
     },
     {
         id: 3654,
-        name: 'Aashiyana Homes',
+        name: 'Hyatt',
         location: 'Lucknow',
         address: 'Gomti Nagar',
         type: 'Apartments',
@@ -19,12 +19,12 @@ const laptopList = [
     },
     {
         id: 3654,
-        name: 'Hotel Agoura',
+        name: 'Locul Midtown',
         location: 'Lucknow',
         address: 'Gomti Nagar',
         type: 'Apartments',
         price: 1400,
-        image: './Assets/Apartments3.webp',
+        image: './Assets/pg1.webp',
     },
     {
         id: 3654,

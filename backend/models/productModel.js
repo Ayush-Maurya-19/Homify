@@ -1,10 +1,11 @@
 const { model, Schema } = require('../connection');
 
 const mySchema = new Schema({
-    name : String,
-    location : String,
-    address : String,
-    category : String,
+    user_id : String,
+    name : String,       //New PG
+    location : String,  //Gomti Nagar
+    city : String,     //lucknow
+    category : String, //type of property
     image : String,
     price : Number,
     rating : Number,

@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import laptopList from "./dummydata";
+import { useNavigate } from 'react-router-dom';
 
 const settings = {
   className: "center",
@@ -20,9 +21,9 @@ const settings = {
 };
 
 
-
-
 const Home = () => {
+
+  const navigate = useNavigate();
   const [laptopData] = useState(laptopList);
 
   const displayData = () => {
@@ -33,7 +34,7 @@ const Home = () => {
           <div className='card-body'>
             <h3>{laptop.name}</h3>
             <h6>{laptop.address}, {laptop.location}</h6>
-            <h4>&#8377; {laptop.price} <button type="button" className='btn btn-primary btn-sm'>Book Now</button> </h4>
+            <h4>&#8377; {laptop.price} <button type="button" className='btn btn-primary btn-sm' onClick={() => navigate("/browser")}>Book Now</button> </h4>
           </div>
         </div>
       </div>
@@ -85,7 +86,7 @@ const Home = () => {
         <Slider {...settings}>
           <div>
             <img className='w-75 p-2 mx-auto' src="./Assets/Hotels.jpeg" alt="Hey" />
-            <h5>Hotels</h5>
+            <h5>Hostels</h5>
           </div>
           <div>
             <img className='w-75 p-2 mx-auto' src="./Assets/Apartments.jpeg" alt="Hey" />
@@ -93,7 +94,7 @@ const Home = () => {
           </div>
           <div>
             <img className='w-75 p-2 mx-auto' src="./Assets/Hostels.jpeg" alt="Hey" />
-            <h5>Hostels</h5>
+            <h5>Flats</h5>
           </div>
           <div>
             <img className='w-75 p-2 mx-auto' src="./Assets/Guest_Houses.jpeg" alt="Hey" />
@@ -101,11 +102,11 @@ const Home = () => {
           </div>
           <div>
             <img className='w-75 p-2 mx-auto' src="./Assets/Villas.jpeg" alt="Hey" />
-            <h5>Villas</h5>
+            <h5>PG</h5>
           </div>
           <div>
             <img className='w-75 p-2 mx-auto' src="./Assets/Resorts.jpeg" alt="Hey" />
-            <h5>Restors</h5>
+            <h5>Hotels</h5>
           </div>
 
         </Slider>
@@ -139,7 +140,7 @@ const Home = () => {
         <footer class="bg-dark text-center text-white">
           <div class="text-center p-3">
             This website is created for educational purposes. Please note that the images and data available on this page are not authenticated. <br />
-            <a class="footer" href=" ">Homify.com </a>
+            <a class="footer" href="/">RoomFindr.com</a>
             © 2023
           </div>
         </footer>
