@@ -12,7 +12,7 @@ const AddRentSpace = () => {
     name: Yup.string()
       .min(4, "Min. 4 characters required")
       .required("Product Name is Required"),
-    category: Yup.string().required("Type of Furniture is Required"),
+    category: Yup.string().required("Category of Property is Required"),
     location: Yup.string()
       .min(4, "Min. 4 characters required")
       .required("Location is Required"),
@@ -171,7 +171,7 @@ const AddRentSpace = () => {
                 value={productForm.values.price}
               />
 
-              <label>Upload Furniture Picture</label>
+              <label>Upload Picture</label>
               <input
                 className="form-control"
                 name="image"

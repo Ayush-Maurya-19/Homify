@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import UseAppContext from "../AppContext";
 
 const Login = () => {
-
   const { setLoggedin } = UseAppContext();
 
   const loginForm = useFormik({
@@ -40,7 +39,6 @@ const Login = () => {
         sessionStorage.setItem("user", JSON.stringify(data));
 
         setLoggedin(true);
-
       } else if (res.status === 401) {
         Swal.fire({
           icon: "error",
@@ -59,11 +57,10 @@ const Login = () => {
 
   return (
     <motion.div
-      initial={{ x: '100%' }}
+      initial={{ x: "100%" }}
       animate={{ x: 0 }}
-      exit={{ x: '-100%' }}
+      exit={{ x: "-100%" }}
       transition={{ duration: 0.3 }}
-
       className="py-5 my-3 container-fluid"
     >
       <div className="col-md-3 mx-auto">
@@ -88,8 +85,20 @@ const Login = () => {
                 type="password"
                 className="form-control mb-4"
               />
+              <p className="text-center">
+                Don't have an account?{" "}
+                <a
+                  href="/signup"
+                  className="text-primary text-decoration-none "
+                >
+                  signup Here
+                </a>
+              </p>
 
-              <button type="submit" className="btn btn-primary mx-auto w-100 mt-4">
+              <button
+                type="submit"
+                className="btn btn-primary mx-auto w-100 mt-4"
+              >
                 Submit
               </button>
             </form>

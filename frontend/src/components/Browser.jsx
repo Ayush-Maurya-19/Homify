@@ -43,12 +43,12 @@ const Browse = () => {
               <h3>{property.name}</h3>
               <h6 className="text-success">{property.category}</h6>
               <h6>{property.location}, {property.city}</h6>
-              <h4>&#8377; {property.price}
-                <Link to={"/spacedetails/" + property._id}>
-                  <button className="btn btn-primary text-center">Buy Now</button>
-                </Link>
-              </h4>
-
+              <div className='justify-content-between d-flex'>
+                <h4>&#8377; {property.price}</h4>
+                  <Link to={"/spacedetails/" + property._id}>
+                    <button className="btn btn-primary text-center">Buy Now</button>
+                  </Link>              
+              </div>
             </div>
           </div>
         </div>

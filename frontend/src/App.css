@@ -1,10 +1,10 @@
-.nav-height {
+/* .nav-height {
   height: 6vh;
-}
+} */
 
 .head {
   height: 94vh;
-}
+} 
 
 .background {
   background-image: url(../public/Assets/Bg.jpg);
@@ -29,9 +29,7 @@
   color: white;
 }
 
-.btn {
-  margin-left: 88px;
-}
+
 
 .dot {
   height: 230px;
@@ -106,3 +104,10 @@
 
 
 /*--------------- Login -----------------------*/
+
+
+/* .slick-arrow{
+  background-color: rgb(8, 8, 8) !important;
+  color: rgb(0, 0, 0);
+ 
+} */

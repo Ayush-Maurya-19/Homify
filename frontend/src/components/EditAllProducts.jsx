@@ -168,7 +168,7 @@ const EditAllProducts = () => {
                       value={productForm.values.price}
                     />
 
-                    <label>Upload Furniture Picture</label>
+                    <label>Upload Picture</label>
                     <input
                       className="form-control"
                       name="image"

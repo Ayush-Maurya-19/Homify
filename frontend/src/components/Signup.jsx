@@ -27,9 +27,11 @@ const Signup = () => {
       name: "",
       email: "",
       password: "",
+      avatar: "",
     },
     onSubmit: async (values, { setSubmitting }) => {
       setSubmitting(true);
+      values.avatar = selFile;
 
       setTimeout(() => {
         console.log(values);
