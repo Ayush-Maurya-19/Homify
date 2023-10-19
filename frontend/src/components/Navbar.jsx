@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../App.css";
 import UseAppContext from "../AppContext";
+import { Link } from "react-router-dom";
+
 
 const Navbar = () => {
   const userJSON = sessionStorage.user;
@@ -22,6 +24,7 @@ const Navbar = () => {
               Logout
             </button>
           </li>
+          <Link to={'/updateuser/' + user._id}>
           <li>
             {user.avatar ? (
               <img
@@ -39,6 +42,7 @@ const Navbar = () => {
               />
             )}
           </li>
+          </Link>
         </>
       );
     } else {
@@ -94,11 +98,6 @@ const Navbar = () => {
                 <li className="nav-item">
                   <NavLink className="nav-link" to="managerentspaces">
                     ManageRentSpaces
-                  </NavLink>
-                </li>
-                <li className="nav-item">
-                  <NavLink className="nav-link" to="/manageuser">
-                    Manage User
                   </NavLink>
                 </li>
               </>

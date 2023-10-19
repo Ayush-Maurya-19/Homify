@@ -41,7 +41,7 @@ const Login = () => {
         sessionStorage.setItem("user", JSON.stringify(data));
 
         setLoggedin(true);
-        navigate(-2);
+        navigate("/");
       } else if (res.status === 401) {
         Swal.fire({
           icon: "error",

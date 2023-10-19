@@ -90,28 +90,28 @@ const Browse = () => {
                 onClick={() => selectOption('Hostel')}
                 className="form-check-input"
                 type="checkbox"
-              />
+              />&nbsp;
               Hostel&nbsp;&nbsp;&nbsp;
               <input
                 checked={selectedTypes.includes('Flat')}
                 onClick={() => selectOption('Flat')}
                 className="form-check-input"
                 type="checkbox"
-              />
+              />&nbsp;
               Flat&nbsp;&nbsp;&nbsp;
               <input
                 checked={selectedTypes.includes('PG')}
                 onClick={() => selectOption('PG')}
                 className="form-check-input"
                 type="checkbox"
-              />
+              />&nbsp;
               PG&nbsp;&nbsp;&nbsp;
               <input
                 checked={selectedTypes.includes('Shared Apartments')}
                 onClick={() => selectOption('Shared Apartments')}
                 className="form-check-input"
                 type="checkbox"
-              />
+              />&nbsp;
               Shared Apartments&nbsp;&nbsp;&nbsp;
             </div>
           </div>

@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import laptopList from "./dummydata";
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Footer from "./Footer";
 
 var settings = {
@@ -55,7 +55,7 @@ const Home = () => {
           <div className='card-body'>
             <h3>{laptop.name}</h3>
             <h6>{laptop.address}, {laptop.location}</h6>
-            <div className='justify-content-between d-flex'> 
+            <div className='justify-content-between d-flex'>
               <h4>&#8377; {laptop.price} </h4>
               <button type="button" className='btn btn-primary btn-sm' onClick={() => navigate("/browser")}>Book Now</button>
             </div>
@@ -110,28 +110,40 @@ const Home = () => {
         <div className='row'>
           <Slider {...settings}>
             <div className='col m-2'>
-              <img className='m-2 mx-auto' width={250} src="./Assets/Hotels.jpeg" alt="Hey" />
-              <h5>Hostels</h5>
+              <Link to="/browser?selectedType=Hostel" className='text-decoration-none text-black'>
+                <img className='m-2 mx-auto' width={250} src="./Assets/Hotels.jpeg" alt="Hey" />
+                <h5>Hostels</h5>
+              </Link>
             </div>
             <div className='col m-2'>
+            <Link to="/browser?selectedType=Shared Apartments" className='text-decoration-none text-black'>
               <img className='m-2 mx-auto' width={250} src="./Assets/Apartments.jpeg" alt="Hey" />
               <h5>Apartments</h5>
+              </Link>
             </div>
             <div className='col m-2'>
+            <Link to="/browser?selectedType=Flat" className='text-decoration-none text-black'>
               <img className='m-2 mx-auto' width={250} src="./Assets/Hostels.jpeg" alt="Hey" />
               <h5>Flats</h5>
+              </Link>
             </div>
             <div className='col m-2'>
+            <Link to="/browser" className='text-decoration-none text-black'>
               <img className='m-2 mx-auto' width={250} src="./Assets/Guest_Houses.jpeg" alt="Hey" />
               <h5>Guest Houses</h5>
+              </Link>
             </div>
             <div className='col m-2'>
+            <Link to="/browser?selectedType=PG" className='text-decoration-none text-black'>
               <img className='m-2 mx-auto' width={250} src="./Assets/Villas.jpeg" alt="Hey" />
               <h5>PG</h5>
+              </Link>
             </div>
             <div className='col m-2'>
+            <Link to="/browser" className='text-decoration-none text-black'>
               <img className='m-2 mx-auto' width={250} src="./Assets/Resorts.jpeg" alt="Hey" />
               <h5>Hotels</h5>
+              </Link>
             </div>
 
           </Slider>
@@ -163,7 +175,7 @@ const Home = () => {
 
       {/* Footer */}
       <div>
-        <Footer/>
+        <Footer />
       </div>
     </div>
   );

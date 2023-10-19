@@ -103,11 +103,18 @@
 
 
 
-/*--------------- Login -----------------------*/
 
+/* Add color to the slider buttons */
+.slick-prev,
+.slick-next {
+  background-color: #000000 !important; /* Change this to the color you want */
+  border-radius: 50%;
+  line-height: 20px !important; /* Adjust the line height as needed */
+  cursor: pointer;
+}
 
-/* .slick-arrow{
-  background-color: rgb(8, 8, 8) !important;
-  color: rgb(0, 0, 0);
- 
-} */
+/* Optional: Add some hover effect */
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: #000000 !important; /* Change this to the hover color you want */
+}

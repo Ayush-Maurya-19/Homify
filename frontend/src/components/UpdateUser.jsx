@@ -43,7 +43,7 @@ const UpdateUser = () => {
   return (
     <div>
       <div className="container py-5">
-        <h1 className="text-center">Update User Form</h1>
+        <h1 className="text-center">Update Your Details</h1>
         <hr />
 
         <div className="card shadow">
@@ -52,7 +52,7 @@ const UpdateUser = () => {
               <Formik initialValues={userData} onSubmit={submitForm}>
                 {(signupForm) => (
                   <form onSubmit={signupForm.handleSubmit}>
-                    <h3 className="text-center">Signup Form</h3>
+                    <h3 className="text-center">User Details</h3>
                     <hr />
 
                     <label>Name</label>
