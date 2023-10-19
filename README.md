@@ -6,5 +6,5 @@
 
 <h2>Screenshots</h2>
 HomePage: 
-<img src="https://github.com/ayush-maurya-19/Homify-Mini-Project/raw/master/screenshots/homepage.png" alt="HomePage" style="max-width: 100%;">
+<img src="https://github.com/ayush-maurya-19/Homify-Mini-Project/raw/master/screenshot/homepage.png" alt="HomePage" style="max-width: 100%;">
 
