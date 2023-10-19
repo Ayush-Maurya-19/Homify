@@ -14,3 +14,59 @@ Manage Property Page:
 ![Manage Property](https://github.com/Ayush-Maurya-19/Homify-Mini-Project/assets/138859591/6fd00e9b-8c27-4eb7-8ece-6d4d280d00ed)
 Booking Page:
 ![Booking page](https://github.com/Ayush-Maurya-19/Homify-Mini-Project/assets/138859591/8aa345c1-196f-4a70-ab96-9f4430c7f33e)
+
+<ol dir="auto">
+<li>
+<p dir="auto"><strong>Clone the repository:</strong></p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="git clone https://github.com/bhanu-sh/MIniProject.git"><pre class="notranslate"><code>git clone https://github.com/bhanu-sh/MIniProject.git
+</code></pre></div>
+</li>
+<li>
+<p dir="auto">Navigate to the server directory:</p>
+</li>
+</ol>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="cd backend"><pre class="notranslate"><code>cd backend
+</code></pre></div>
+<ol start="3" dir="auto">
+<li>Install server dependencies:</li>
+</ol>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="npm install"><pre class="notranslate"><code>npm install
+</code></pre></div>
+<ol start="4" dir="auto">
+<li>Navigate to the client directory:</li>
+</ol>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="cd ../frontend"><pre class="notranslate"><code>cd ../frontend
+</code></pre></div>
+<ol start="5" dir="auto">
+<li>Install client dependencies:</li>
+</ol>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="npm install"><pre class="notranslate"><code>npm install
+</code></pre></div>
+<ol start="6" dir="auto">
+<li>Return to the root directory:</li>
+</ol>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="cd .."><pre class="notranslate"><code>cd ..
+</code></pre></div>
+<ol start="7" dir="auto">
+<li>
+<p dir="auto">Create a .env file in the backend directory with the required environment variables (MONGOOSE_API).</p>
+</li>
+<li>
+<p dir="auto">Create a .env file in the frontend directory with the required environment variables (REACT_APP_ADMIN_CODE, REACT_APP_BACKEND_URL).</p>
+</li>
+<li>
+<p dir="auto">Start the server:</p>
+</li>
+</ol>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="cd backend
+npm run dev"><pre class="notranslate"><code>cd backend
+npm run dev
+</code></pre></div>
+<ol start="10" dir="auto">
+<li>Start the client:</li>
+</ol>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="cd frontend
+npm start"><pre class="notranslate"><code>cd frontend
+npm start
+</code></pre></div>
+<hr>
