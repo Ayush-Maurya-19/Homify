@@ -58,7 +58,7 @@ npm run dev
 npm start"><pre class="notranslate"><code>cd frontend
 npm start
 </code></pre></div>
-<hr/>
+<br/>
 Now you are all set to run it locally in your device. 
 
 
