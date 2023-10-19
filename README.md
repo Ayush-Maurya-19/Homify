@@ -18,7 +18,7 @@ Booking Page:
 <h2>Getting Started</h2>
 <ol dir="auto">
 <li>
-<p dir="auto"><strong>Clone the repository.</strong></p>
+<p dir="auto"><strong>Clone the repository</strong></p>
 </li>
 <li>
 <p dir="auto">Navigate to the server directory:</p>
@@ -42,7 +42,7 @@ Booking Page:
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="npm install"><pre class="notranslate"><code>npm install
 </code></pre></div>
 <ol start="6" dir="auto">
-<li>Return to the root directory.</li>
+Return to the root directory
 </ol>
 <li>
 <p dir="auto">Start the server:</p>
@@ -59,7 +59,7 @@ npm run dev
 npm start"><pre class="notranslate"><code>cd frontend
 npm start
 </code></pre></div>
-Your app should now be running locally. By default, the client runs on port 3000, and the server on port 5000.
-
+<hr/>
+Now you are all set to run it locally in your device. 
 
 
