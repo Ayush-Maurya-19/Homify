@@ -6,5 +6,8 @@
 
 <h2>Screenshots</h2>
 HomePage: 
-<img src="https://github.com/ayush-maurya-19/Homify-Mini-Project/raw/master/screenshot/homepage.png" alt="HomePage" style="max-width: 100%;">
 
+![Home Page](https://github.com/Ayush-Maurya-19/Homify-Mini-Project/assets/138859591/b0ee4de0-e06f-46e5-a3a2-c28f815d1139)
+![Browse Property](https://github.com/Ayush-Maurya-19/Homify-Mini-Project/assets/138859591/6b97a5c2-1960-408a-bdab-ece17b6dbc24)
+![Manage Property](https://github.com/Ayush-Maurya-19/Homify-Mini-Project/assets/138859591/6fd00e9b-8c27-4eb7-8ece-6d4d280d00ed)
+![Booking page](https://github.com/Ayush-Maurya-19/Homify-Mini-Project/assets/138859591/8aa345c1-196f-4a70-ab96-9f4430c7f33e)
