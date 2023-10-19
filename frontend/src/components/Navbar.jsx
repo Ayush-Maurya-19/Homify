@@ -26,7 +26,7 @@ const Navbar = () => {
             {user.avatar ? (
               <img
                 src={"http://localhost:5000/" + user.avatar}
-                width={50}
+                width={40}
                 className="rounded-circle pfp"
                 alt=""
               />
@@ -35,7 +35,7 @@ const Navbar = () => {
                 src={"./Assets/Admin.png"}
                 className="rounded-circle pfp"
                 alt=""
-                width={50}
+                width={40}
               />
             )}
           </li>
@@ -55,7 +55,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar p-0 navbar-expand-lg bg-body-tertiary nav-height">
+    <nav className="navbar p-1 navbar-expand-lg bg-body-tertiary nav-height">
       <div className="container-fluid">
         {/* if i enter # it showing warning and nothing is shown in homepage*/}
         <a className="navbar-brand " href="/">

@@ -3,9 +3,11 @@ import React from "react";
 import Swal from "sweetalert2";
 import { motion } from "framer-motion";
 import UseAppContext from "../AppContext";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const { setLoggedin } = UseAppContext();
+  const navigate = useNavigate();
 
   const loginForm = useFormik({
     initialValues: {
@@ -39,6 +41,7 @@ const Login = () => {
         sessionStorage.setItem("user", JSON.stringify(data));
 
         setLoggedin(true);
+        navigate(-2);
       } else if (res.status === 401) {
         Swal.fire({
           icon: "error",

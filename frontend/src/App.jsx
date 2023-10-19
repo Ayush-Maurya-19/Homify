@@ -15,9 +15,9 @@ import { Toaster } from "react-hot-toast";
 import { AppProvider } from "./AppContext";
 import UserAuth from "./UserAuth";
 import UpdateUser from "./components/UpdateUser";
-import AllProducts from "./components/AllProducts";
 import EditAllProducts from "./components/EditAllProducts";
 import Checkout from "./components/Checkout";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -39,9 +39,9 @@ function App() {
               <Route element={<UserAuth> <ManageUser /> </UserAuth>} path="/manageuser" />
               <Route element={<UpdateUser />} path="/updateuser/:id" />
               <Route element={<NotFound />} path="*" />
-              <Route element={<AllProducts />} path="/allproducts" />
               <Route element={<EditAllProducts />} path="/editallproducts/:id" />
-              <Route element={<Checkout />} path="/checkout/:id" />
+              <Route element={<UserAuth> <Checkout /></UserAuth>} path="/checkout/:id" />
+              <Route element={<Footer />} path="/footer" />
 
 
 

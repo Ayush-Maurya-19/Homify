@@ -81,8 +81,8 @@ const Checkout = () => {
       if (res.status === 200) {
         Swal.fire({
           icon: "success",
-          title: "Nice",
-          text: "Your Order is placed successfully",
+          title: "Congratulation",
+          text: "Your Booking is Confirmed",
         })
           .then((result) => {
             navigate("/");

@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import laptopList from "./dummydata";
 import { useNavigate } from 'react-router-dom';
+import Footer from "./Footer";
 
 var settings = {
   dots: false,
@@ -162,13 +163,7 @@ const Home = () => {
 
       {/* Footer */}
       <div>
-        <footer class="bg-dark text-center text-white">
-          <div class="text-center p-3">
-            This website is created for educational purposes. Please note that the images and data available on this page are not authenticated. <br />
-            <a class="footer" href="/">RoomFindr.com</a>
-            © 2023
-          </div>
-        </footer>
+        <Footer/>
       </div>
     </div>
   );

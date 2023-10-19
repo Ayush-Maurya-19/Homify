@@ -11,7 +11,7 @@ const AddRentSpace = () => {
   const ProductSchema = Yup.object().shape({
     name: Yup.string()
       .min(4, "Min. 4 characters required")
-      .required("Product Name is Required"),
+      .required("Property Name is Required"),
     category: Yup.string().required("Category of Property is Required"),
     location: Yup.string()
       .min(4, "Min. 4 characters required")
@@ -56,7 +56,7 @@ const AddRentSpace = () => {
         Swal.fire({
           icon: "success",
           title: "Nice",
-          text: "Your Product is added successfully",
+          text: "Your Property is added successfully",
         })
           .then((result) => {
             navigate("/managerentspaces");

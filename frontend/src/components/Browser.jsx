@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import Footer from "./Footer";
 
 const Browse = () => {
   const location = useLocation();
@@ -121,6 +122,9 @@ const Browse = () => {
 
       <div className="container">
         <div className="row">{displayData()}</div>
+      </div>
+      <div>
+        <Footer/>
       </div>
     </div>
   );

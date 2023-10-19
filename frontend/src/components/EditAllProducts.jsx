@@ -58,7 +58,7 @@ const EditAllProducts = () => {
     console.log("Status of update: " + res.status);
 
     if (res.status === 200) {
-      toast.success("Product Updated Successfully");
+      toast.success("Details Updated Successfully");
       navigate("/managerentspaces");
     } else {
       toast.error("Something went wrong");

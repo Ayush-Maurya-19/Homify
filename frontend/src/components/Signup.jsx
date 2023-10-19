@@ -9,7 +9,7 @@ import { useState } from "react";
 
 const SignupSchema = Yup.object().shape({
   name: Yup.string()
-    .min(4, 'Minimum 4 chracters required')
+    .min(3, 'Minimum 3 chracters required')
     .required('Name is Required'),
   email: Yup.string().email('Invalid email').required('Required'),
 });

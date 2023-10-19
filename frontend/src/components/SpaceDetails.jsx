@@ -56,11 +56,12 @@ const SpaceDetails = () => {
                     </div>
                     <hr />
                     <p>This is an amazing flat come with the facilities like AC, Great view, free parking and lot more.
-                        Best place to stay in lucknow in the most affordable price.
+                        Best place to stay in {propertyData.city} at the most affordable price.
                     </p>
                     
                     <h5>&#8377; {propertyData.price}</h5>
                     <br/>
+                    
                     {sessionStorage.user &&
                         propertyData.user_id === JSON.parse(sessionStorage.user)._id ? (
                         <button

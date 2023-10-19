@@ -158,16 +158,16 @@ const ManageRentSpaces = () => {
         })}
         {noProductsAdded && (
         <div className="container">
-          <h1>Edit Product</h1>
+          <h2>List Your Property Here</h2>
           <hr />
           <div className="card shadow">
             <div className="card-body">
-              <p>You have not added any product.</p>
+              <p>You have not listed any property yet.</p>
               <button
                 className="btn btn-primary"
                 onClick={() => navigate("/addrentspace")}
               >
-                Add Products
+                List Property
               </button>
             </div>
           </div>
