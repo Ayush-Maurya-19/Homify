@@ -41,9 +41,10 @@ Booking Page:
 </ol>
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="npm install"><pre class="notranslate"><code>npm install
 </code></pre></div>
+<ol start="6" dir="auto">
 <li>Return to the root directory</li>
 <li>
-<p dir="auto">Start the server:</p>
+  <p dir="auto">Start the server:</p>
 </li>
 </ol>
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="cd backend
