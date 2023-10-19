@@ -15,11 +15,10 @@ Manage Property Page:
 Booking Page:
 ![Booking page](https://github.com/Ayush-Maurya-19/Homify-Mini-Project/assets/138859591/8aa345c1-196f-4a70-ab96-9f4430c7f33e)
 
+<h2>Getting Started</h2>
 <ol dir="auto">
 <li>
 <p dir="auto"><strong>Clone the repository:</strong></p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="git clone https://github.com/bhanu-sh/MIniProject.git"><pre class="notranslate"><code>git clone https://github.com/bhanu-sh/MIniProject.git
-</code></pre></div>
 </li>
 <li>
 <p dir="auto">Navigate to the server directory:</p>
@@ -35,7 +34,7 @@ Booking Page:
 <ol start="4" dir="auto">
 <li>Navigate to the client directory:</li>
 </ol>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="cd ../frontend"><pre class="notranslate"><code>cd ../frontend
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="cd ../frontend"><pre class="notranslate"><code>cd frontend
 </code></pre></div>
 <ol start="5" dir="auto">
 <li>Install client dependencies:</li>
@@ -47,13 +46,6 @@ Booking Page:
 </ol>
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="cd .."><pre class="notranslate"><code>cd ..
 </code></pre></div>
-<ol start="7" dir="auto">
-<li>
-<p dir="auto">Create a .env file in the backend directory with the required environment variables (MONGOOSE_API).</p>
-</li>
-<li>
-<p dir="auto">Create a .env file in the frontend directory with the required environment variables (REACT_APP_ADMIN_CODE, REACT_APP_BACKEND_URL).</p>
-</li>
 <li>
 <p dir="auto">Start the server:</p>
 </li>
