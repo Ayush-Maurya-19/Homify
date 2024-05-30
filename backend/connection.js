@@ -1,14 +1,15 @@
+require('dotenv').config();  // Load environment variables from a .env file
 const mongoose = require('mongoose');
 
-const url = "mongodb+srv://Ayush:ayush@cluster0.oy69d4x.mongodb.net/?retryWrites=true&w=majority";
+const url = process.env.MONGOOSE_API;  // Use the environment variable directly
 
-// asynchronous - return Promise
-mongoose.connect(url)
-.then((result) => {
-    console.log('database connected successfully');
-})
-.catch((err) => {
-    console.log(err);
-});
+// Asynchronous - returns a Promise
+mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
+    .then(() => {
+        console.log('Database connected successfully');
+    })
+    .catch((err) => {
+        console.log('Error connecting to the database', err);
+    });
 
 module.exports = mongoose;
