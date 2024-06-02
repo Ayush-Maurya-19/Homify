@@ -4,6 +4,7 @@ const fs = require('fs'); // Import the 'fs' module for file system operations
 
 const router = express.Router();
 
+
 const myStorage = multer.diskStorage({
     destination: (req, file, cb) => { cb(null, './uploads') },
     filename: (req, file, cb) => { cb(null, file.originalname) }
