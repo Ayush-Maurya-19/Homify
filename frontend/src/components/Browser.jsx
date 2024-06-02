@@ -12,7 +12,7 @@ const Browse = () => {
   const [selectedTypes, setSelectedTypes] = useState(selectedType ? [selectedType] : []);
 
   const fetchProductData = async () => {
-    const res = await fetch("http://localhost:5000/product/getall");
+    const res = await fetch( process.env.REACT_APP_BACKEND_URL + "/product/getall");
     if (res.status === 200) {
       const data = await res.json();
       setPropertyData(data);
@@ -37,7 +37,7 @@ const Browse = () => {
           <div className="card">
             <img
               className="card img-resize img-fluid"
-              src={"http://localhost:5000/" + property.image}
+              src={process.env.REACT_APP_BACKEND_URL + "/" + property.image}
               alt=""
             />
             <div className="card-body">

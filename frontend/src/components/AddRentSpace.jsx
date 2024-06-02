@@ -42,7 +42,7 @@ const AddRentSpace = () => {
 
       // send the data to the server
 
-      const res = await fetch("http://localhost:5000/product/add", {
+      const res = await fetch( process.env.REACT_APP_BACKEND_URL +"/product/add", {
         method: "POST",
         body: JSON.stringify(values),
         headers: {
@@ -85,7 +85,7 @@ const AddRentSpace = () => {
     const fd = new FormData();
     fd.append("myfile", file);
 
-    const res = await fetch("http://localhost:5000/util/uploadfile", {
+    const res = await fetch(process.env.REACT_APP_BACKEND_URL + "/util/uploadfile", {
       method: "POST",
       body: fd,
     });

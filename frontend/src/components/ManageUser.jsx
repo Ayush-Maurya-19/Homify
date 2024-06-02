@@ -6,7 +6,7 @@ const ManageUser = () => {
   const [userData, setUserData] = useState([]);
 
   const fetchUserData = async () => {
-    const res = await fetch("http://localhost:5000/user/getall");
+    const res = await fetch(process.env.REACT_APP_BACKEND_URL + "/user/getall");
     console.log(res.status);
 
     if (res.status === 200) {
@@ -30,7 +30,7 @@ const ManageUser = () => {
     // }
 
     toast.promise(
-      fetch("http://localhost:5000/user/delete/" + id, { method: "DELETE" }),
+      fetch(process.env.REACT_APP_BACKEND_URL + "/user/delete/" + id, { method: "DELETE" }),
       {
         loading: "Deleting...",
         success: () => {

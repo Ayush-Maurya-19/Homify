@@ -28,7 +28,7 @@ const Navbar = () => {
           <li>
             {user.avatar ? (
               <img
-                src={"http://localhost:5000/" + user.avatar}
+                src={process.env.REACT_APP_BACKEND_URL + "/" + user.avatar}
                 width={40}
                 className="rounded-circle pfp"
                 alt=""

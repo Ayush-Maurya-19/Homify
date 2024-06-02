@@ -9,7 +9,7 @@ const UpdateUser = () => {
   const [userData, setUserData] = useState(null);
 
   const fetchUserData = async () => {
-    const res = await fetch(`http://localhost:5000/user/getbyid/${id}`);
+    const res = await fetch(process.env.REACT_APP_BACKEND_URL + `/user/getbyid/${id}`);
     if (res.status === 200) {
       const data = await res.json();
       console.log(data);
@@ -24,7 +24,7 @@ const UpdateUser = () => {
   const submitForm = async (values, { setSubmitting }) => {
     console.log(values);
 
-    const res = await fetch(`http://localhost:5000/user/update/${id}`, {
+    const res = await fetch(process.env.REACT_APP_BACKEND_URL + `/user/update/${id}`, {
       method: "PUT",
       body: JSON.stringify(values),
       headers: {

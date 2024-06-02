@@ -11,7 +11,7 @@ const SpaceDetails = () => {
         const fetchData = async () => {
             try {
                 const response = await fetch(
-                    `http://localhost:5000/product/getbyid/${id}`
+                    process.env.REACT_APP_BACKEND_URL + `/product/getbyid/${id}`
                 );
                 if (response.ok) {
                     const data = await response.json();
@@ -41,7 +41,7 @@ const SpaceDetails = () => {
                 <div className="col-md-3">
                     <img
                         className="card img-fluid shadow"
-                        src={"http://localhost:5000/" + propertyData.image}
+                        src={process.env.REACT_APP_BACKEND_URL + "/" + propertyData.image}
                         alt=""
                     />
                 </div>
